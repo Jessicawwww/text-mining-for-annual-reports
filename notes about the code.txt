@@ -1,0 +1,28 @@
+#the method for evaluating the A-listed companies according to the info in the annual reports
+#firstly we use the data in 2016 to train the model
+"""
+1.choose some specific companies that have been performing well
+2.Count the frequency of all verbs and nouns in these selected stock annual reports
+3.Select the top 100 keywords
+4.Count the number of these keywords in the selected annual report, forming an X data set in order
+(we can add some cross terms to improve the fitting accuracy.)
+5.Using the EPS in 2016 as the y data set to fit the above x data set, the coefficient k and the intercept b are obtained.
+"""
+#Then use the model to analyze all the data in 2016 fiscal year.
+"""
+1.Count the frequency of the above selected keywords in all 2016 annual reports to form the x data set
+2.Use the k and b from above to predict y
+3.Perform statistical analysis (z test) on y and average earnings per share. If the effect is good, proceed to the next step.
+"""
+#Then use all data in 2016 to train the model
+"""
+1.Count the frequency of the above selected keywords in all 2016 annual reports to form the x data set
+2.Use the 2016 average EPS as y to fit x, and get k and b
+(we can add some cross terms to improve the fitting accuracy.)
+"""
+#Then use all data in 2017 to train the model
+"""
+1.Count the frequency of the above selected keywords in all 2017 annual reports to form the x data set
+2.Use the k and b from above to predict y
+3.perform the statistical analysis of predictions and real EPS (z test)
+"""
